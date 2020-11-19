@@ -27,14 +27,14 @@
     </section>
     <!-- home -->
     <section id="home">
-        <img src="img/nikeavatar.jpg" alt="" class="home__avatar">
         <h1>우리 스포츠의 힘을 믿어.</h1>
-        <p>서로의 무대가 어디든, 춤으로 하나가 되는 우리
+        <h2>
+            서로의 무대가 어디든, 춤으로 하나가 되는 우리
             <br>춤으로 세상을 바꿔가는 아티스트들의 스토리,
             <br>그들이 직접 추천하는 스타일을 만나보고
             <br>최고의 댄스 크루들을 위한
             <br>THE STAGE 여정을 함께해보세요.
-        </p>
+        </h2>
        <div class="home__button">
            <button class="home__btn">
            컬렉션 구매하기
@@ -54,17 +54,17 @@
         <div class="aboutme__list">
             <div class="aboutme__list-des">
             <img src="img/nike aboutme1.jpg" class="aboutme__pic">
-            <h3>Womens</h3>
+            <h2 class="aboutme__title">Womens</h2>
             <p>런닝하기에도 좋은 여성 레깅스</p>
             </div>
             <div class="aboutme__list-des">
              <img src="img/nike aboutme2.jpeg" class="aboutme__pic">
-             <h3>mens</h3>
+             <h2 class="aboutme__title">mens</h2>
              <p>다양한 활동에도 편리한 기능성 운동복</p>
             </div>
             <div class="aboutme__list-des">
                 <img src="img/nike aboutme3.jpg" class="aboutme__pic">
-                <h3>kids</h3>
+                <h2 class="aboutme__title">kids</h2>
                 <p>아이들도 입기 좋은 츄리닝</p>
             </div>
         </div>
@@ -91,9 +91,9 @@
     <section id="skills">
         <h1>Each nation buying popular brand</h1>
         <h2>nation</h2>
-        <p> 세계적으로 각국은 여전히 나이키를 사랑합니다.
+        <h3 class="skills__content"> 세계적으로 각국은 여전히 나이키를 사랑합니다.
             <br> 그렇다면 제일 인기있는 브랜드는 무엇일까요?
-        </p>
+        </h3>
         <div class="skills__graph">
             <!-- brand 1 -->
             <div class="skills__graph-left">
@@ -103,7 +103,7 @@
                     <span>97%</span>
                 </div>
                 <div class="skills__left-percentage">
-                    <div class="skills__left-value">
+                    <div class="skills__left-value" style="width: 97%;">
 
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     <span>90%</span>
                 </div>
                 <div class="skills__left-percentage">
-                    <div class="skills__left-value">
+                    <div class="skills__left-value" style="width:90%">
 
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     <span>83%</span>
                 </div>
                 <div class="skills__left-percentage">
-                    <div class="skills__left-value">
+                    <div class="skills__left-value" style="width: 83%;">
 
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                     <span>78%</span>
                 </div>
                 <div class="skills__left-percentage">
-                    <div class="skills__left-value">
+                    <div class="skills__left-value" style="width:78%">
 
                     </div>
                 </div>
@@ -143,21 +143,21 @@
                         <span>69%</span>
                     </div>
                     <div class="skills__left-percentage">
-                        <div class="skills__left-value">
+                        <div class="skills__left-value" style="width:69%">
     
                         </div>
                     </div>
             </div>
             <div class="skills__graph-right">
                 <div class="skills__graph-right1">
-                    <h3>brand</h3>
-                    <span>nike, adidas, <br>new balance,
-                    h&m, uniqulo, zara <br>
-                    so many thing <br>
+                    <h2>brand</h2>
+                    <span>nike adidas <br>new balance
+                    h&m uniqulo zara <br>
+                    so many thing 
                     u can buy that</span>
                 </div>
-                <div class="skills__graph-right1">
-                    <h3>etc</h3>
+                <div class="skills__graph-right2">
+                    <h2>etc</h2>
                     <span>etc <br>
                     worldwide</span>
                 </div>
@@ -169,10 +169,10 @@
         <h1>Trending now</h1>
         <h2>collection</h2>
         <div class="mywork__btn">
-            <button class="mywork__btn-list">봄</button>
-            <button class="mywork__btn-list">여름</button>
-            <button class="mywork__btn-list">가을</button>
-            <button class="mywork__btn-list">겨울</button>
+            <button class="mywork__btn-list active">봄 <span class="mywork__btn-count active">6</span></button>
+            <button class="mywork__btn-list">여름 <span class="mywork__btn-count">3</span></button>
+            <button class="mywork__btn-list">가을 <span class="mywork__btn-count">1</span></button>
+            <button class="mywork__btn-list">겨울 <span class="mywork__btn-count">4</span></button>
         </div>
         <div class="mywork__collection">
         
@@ -180,7 +180,7 @@
             <a href="https://www.nike.com/kr/ko_kr/" class="href">
                 <img src="img/collection3.jpg" class="collection__pic">
                 <div class="mywork__description">
-                 <p>바람막이 컬렉션</p>
+                 <p class="href__after">바람막이 컬렉션</p>
                  <p>언제나 입기 좋은</p>
                 </div>
                 </a>
@@ -188,7 +188,7 @@
             <a href="https://www.nike.com/kr/ko_kr/" class="href">
                 <img src="img/nike collection4.jpg" class="collection__pic">
                 <div class="mywork__description">
-                 <p>후리스 컬렉션</p>
+                 <p class="href__after">후리스 컬렉션</p>
                  <p>겨울에 입기 좋은</p>
                 </div>
                 </a>
@@ -196,7 +196,7 @@
             <a href="https://www.nike.com/kr/ko_kr/" class="href">
                 <img src="img/collection5.jpeg" class="collection__pic">
                 <div class="mywork__description">
-                 <p>에어포스 컬렉션</p>
+                 <p class="href__after">에어포스 컬렉션</p>
                  <p>일상에 신기좋은</p>
                 </div>
                 </a>
@@ -204,7 +204,7 @@
             <a href="https://www.nike.com/kr/ko_kr/" class="href">
                 <img src="img/collection6.jpeg" class="collection__pic">
                 <div class="mywork__description">
-                 <p>조던 컬렉션</p>
+                 <p class="href__after">조던 컬렉션</p>
                  <p>일상에 꾸미기좋은</p>
                 </div>
                 </a>
@@ -212,7 +212,8 @@
             <a href="https://www.nike.com/kr/ko_kr/" class="href">
                     <img src="img/collection2.jpg" class="collection__pic">
                     <div class="mywork__description">
-                     <p>코르테즈 컬렉션</p>
+                     <p class="href__after
+">코르테즈 컬렉션</p>
                      <p>일상에 신기 좋은</p>
                     </div>
                     </a>
@@ -220,7 +221,7 @@
                <a href="https://www.nike.com/kr/ko_kr/" class="href">
                 <img src="img/collection7.jpeg" class="collection__pic">
                 <div class="mywork__description">
-                 <p>베이퍼맥스 컬렉션</p>
+                 <p class="href__after">베이퍼맥스 컬렉션</p>
                  <p>일상에 신기 좋은</p>
                 </div>
                 </a>
@@ -231,69 +232,89 @@
         <h1>CEO</h1>
         <H2>See what they are saying</H2>
         <!-- testi1 -->
-        <div class="testimonials">
+        <div class="testimonials__list">
             <div class="testimonials__avatar">
                 <img src="img/testi1.jpeg" class="testi__pic">
             </div>
             <div class="testimonials__saying">
                 <p>
                     세상 사람들이 미쳤다고 말하더라도 신경 쓰지 말자. 멈추지 않고 계속 가는 거다. 그곳에 도달할 때까지는 멈추는 것을 생각하지도 말자.
-                     그리고 그곳이 어디인지에 관해서도 깊이 생각하지 말자. 어떤 일이 닥치더라도 멈추지 말자
+                     <br>그리고 그곳이 어디인지에 관해서도 깊이 생각하지 말자. 어떤 일이 닥치더라도 멈추지 말자
                      <br><span class="esp"> 필 나이트</span> /nike
                 </p>
             </div>
         </div>
         <!-- test2 -->
-        <div class="testimonials">
-            <div class="testimonials__avatar">
-                <img src="img/test2.jpeg" class="testi__pic">
-            </div>
-            <div class="testimonials__saying">
+        <div class="testimonials__list">
+             <div class="testimonials__saying">
                 <p>
                     나이키의 11개 격언은 새기면 새길수록 가슴이 뛴다.  
                     나이키의 철학은 회사뿐만 아니라 개인의 삶에도 그대로 적용할 수 있다. 
-                    기본에 충실하고, 혁신하고, 단순화하고, 즉시 행동하고, 옳은 일을 하고,  
+                    <br>기본에 충실하고, 혁신하고, 단순화하고, 즉시 행동하고, 옳은 일을 하고,  
                     소비자를 위한다면 승리와 행운은 언제나 나의 몫일 것이다.
                      <br><span class="esp"> 마크 파커</span> /nike
                 </p>
+            </div>
+            <div class="testimonials__avatar">
+                <img src="img/test2.jpeg" class="testi__pic">
             </div>
         </div>
     </section>
     <!-- contact -->
     <section id="contact">
+        <div class="contact__icons">
         <img src="img/real nike.png" alt="" class="contact__pic">
-        <span>고객센터</span>
+        
         <span class="contact__input">
+            <span>고객센터   </span>
             <i class="fas fa-search"></i>
+            
             <input type="text">
         </span>
+    </div>
     </section>
-    <h2>contact us</h2>
+    <h2 class="contact__title">contact us</h2>
     <div class="contact__list">
         <div class="contact__list-icon">
-            <i class="fas fa-phone-alt"></i>
-            <div>전화 문의</div>
-            <div>010-2723-5455</div>
-            <div>mon-fri 9am-8pm</div>
-        </div>
-        <div class="contact__list-icon">
-            <i class="far fa-comment-alt"></i>
-            <div>채팅 문의</div>
-            <div>1:1 채팅 문의 가능</div>
+            <span class="contact__icon">
+            <i class="fas fa-mobile-alt"></i>
+            </span>
+            <div class="contact__content">
+                전화 문의
+                <br>010-2723-5455
+                <br>mon-fri 9am-8pm
+            </div>
             
         </div>
         <div class="contact__list-icon">
-            <i class="fas fa-envelope-open"></i>
-            <div>이메일 문의</div>
-            <div>321963741@naver.com</div>
-            <div>1:1 이메일 문의 가능</div>
+            <span class="contact__icon">
+            <i class="far fa-comment-alt"></i>
+            </span>
+            <div class="contact__content">
+                 채팅 문의
+                <br>1:1 채팅 문의 가능
+            </div>
         </div>
         <div class="contact__list-icon">
-            <i class="fas fa-info"></i>
-            <div>매장 안내</div>
-            <div>전역 매장 방문 가능</div>
+            <span class="contact__icon">
+            <i class="fas fa-envelope-open"></i>
+            </span>
+            <div class="contact__content">
+              이메일 문의
+                <br>321963741@naver.com
+                <br>1:1 이메일 문의 가능
+            </div>
+            
         </div>
-    </div>
+        <div class="contact__list-icon">
+            <span class="contact__icon">
+            <i class="fas fa-info"></i>
+            </span>
+            <div class="contact__content">
+                매장안내
+                  <br>전역 매장 방문 가능
+            </div>
+         </div>
     
 </body>
 </html>
