@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nike</title>
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
     />
     <link rel="stylesheet" href="practice.css" />
     <script src="practice.js" defer></script>
@@ -20,28 +20,30 @@
             <img src="img/real nike.png" alt="" class="navbar__pic">
         </div>
         <div class="navbar__list">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-search" data-scroll="#skills" ></i>
+            <i class="fas fa-shopping-cart"data-scroll="#testimonials" ></i>
+            <i class="fas fa-bars" data-scroll="#contact"></i>
         </div>
     </section>
     <!-- home -->
     <section id="home">
-        <h1>우리 스포츠의 힘을 믿어.</h1>
-        <h2>
-            서로의 무대가 어디든, 춤으로 하나가 되는 우리
-            <br>춤으로 세상을 바꿔가는 아티스트들의 스토리,
-            <br>그들이 직접 추천하는 스타일을 만나보고
-            <br>최고의 댄스 크루들을 위한
-            <br>THE STAGE 여정을 함께해보세요.
-        </h2>
-       <div class="home__button">
-           <button class="home__btn">
-           컬렉션 구매하기
-           </button>
-           <button class="home__btn">
-               자세히 보기
-           </button>
+        <div class="home__container">
+            <h1>우리 스포츠의 힘을 믿어.</h1>
+            <h2>
+                서로의 무대가 어디든, 춤으로 하나가 되는 우리
+                <br>춤으로 세상을 바꿔가는 아티스트들의 스토리,
+                <br>그들이 직접 추천하는 스타일을 만나보고
+                <br>최고의 댄스 크루들을 위한
+                <br>THE STAGE 여정을 함께해보세요.
+            </h2>
+            <div class="home__button">
+                <button class="home__btn" data-homescroll="#aboutme">
+                컬렉션 구매하기
+                </button>
+                <button class="home__btn" data-homescroll="#contact">
+                자세히 보기
+                </button>
+            </div>
         </div>
     </section>
     <!-- about me -->
@@ -58,9 +60,9 @@
             <p>런닝하기에도 좋은 여성 레깅스</p>
             </div>
             <div class="aboutme__list-des">
-             <img src="img/nike aboutme2.jpeg" class="aboutme__pic">
-             <h2 class="aboutme__title">mens</h2>
-             <p>다양한 활동에도 편리한 기능성 운동복</p>
+                <img src="img/nike aboutme2.jpeg" class="aboutme__pic">
+                <h2 class="aboutme__title">mens</h2>
+                <p>다양한 활동에도 편리한 기능성 운동복</p>
             </div>
             <div class="aboutme__list-des">
                 <img src="img/nike aboutme3.jpg" class="aboutme__pic">
@@ -169,61 +171,108 @@
         <h1>Trending now</h1>
         <h2>collection</h2>
         <div class="mywork__btn">
-            <button class="mywork__btn-list active">봄 <span class="mywork__btn-count active">6</span></button>
-            <button class="mywork__btn-list">여름 <span class="mywork__btn-count">3</span></button>
-            <button class="mywork__btn-list">가을 <span class="mywork__btn-count">1</span></button>
-            <button class="mywork__btn-list">겨울 <span class="mywork__btn-count">4</span></button>
+            <button class="mywork__btn-list active" data-filter="spring">봄 <span class="mywork__btn-count active">6</span></button>
+            <button class="mywork__btn-list" data-filter="summer">여름 <span class="mywork__btn-count">3</span></button>
+            <button class="mywork__btn-list" data-filter="fall">가을 <span class="mywork__btn-count">1</span></button>
+            <button class="mywork__btn-list" data-filter="winter">겨울 <span class="mywork__btn-count">4</span></button>
         </div>
         <div class="mywork__collection">
-        
             <!-- collection1 -->
-            <a href="https://www.nike.com/kr/ko_kr/" class="href">
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="spring">
                 <img src="img/collection3.jpg" class="collection__pic">
                 <div class="mywork__description">
-                 <p class="href__after">바람막이 컬렉션</p>
-                 <p>언제나 입기 좋은</p>
+                    <p class="href__after">바람막이 컬렉션</p>
+                    <p>언제나 입기 좋은</p>
                 </div>
-                </a>
+            </a>
                 <!-- collection1 -->
-            <a href="https://www.nike.com/kr/ko_kr/" class="href">
+            <a href="https://www.nike.com/kr/ko_kr/" class="href"data-type="winter">
                 <img src="img/nike collection4.jpg" class="collection__pic">
                 <div class="mywork__description">
-                 <p class="href__after">후리스 컬렉션</p>
-                 <p>겨울에 입기 좋은</p>
+                    <p class="href__after">후리스 컬렉션</p>
+                    <p>겨울에 입기 좋은</p>
                 </div>
-                </a>
+            </a>
                 <!-- collection1 -->
-            <a href="https://www.nike.com/kr/ko_kr/" class="href">
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="summer">
                 <img src="img/collection5.jpeg" class="collection__pic">
                 <div class="mywork__description">
-                 <p class="href__after">에어포스 컬렉션</p>
-                 <p>일상에 신기좋은</p>
+                    <p class="href__after">에어포스 컬렉션</p>
+                    <p>일상에 신기좋은</p>
                 </div>
-                </a>
+            </a>
                 <!-- collection1 -->
-            <a href="https://www.nike.com/kr/ko_kr/" class="href">
+            <a href="https://www.nike.com/kr/ko_kr/" class="href"data-type="spring">
                 <img src="img/collection6.jpeg" class="collection__pic">
                 <div class="mywork__description">
-                 <p class="href__after">조던 컬렉션</p>
-                 <p>일상에 꾸미기좋은</p>
+                    <p class="href__after">조던 컬렉션</p>
+                    <p>일상에 꾸미기좋은</p>
                 </div>
-                </a>
+            </a>
                 <!-- collection1 -->
-            <a href="https://www.nike.com/kr/ko_kr/" class="href">
-                    <img src="img/collection2.jpg" class="collection__pic">
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="summer">
+                <img src="img/collection2.jpg" class="collection__pic">
                     <div class="mywork__description">
-                     <p class="href__after">코르테즈 컬렉션</p>
-                     <p>일상에 신기 좋은</p>
+                        <p class="href__after">코르테즈 컬렉션</p>
+                        <p>일상에 신기 좋은</p>
                     </div>
-                    </a>
-               <!-- collection1 -->
-               <a href="https://www.nike.com/kr/ko_kr/" class="href">
+            </a>
+                <!-- collection1 -->
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="fall">
                 <img src="img/collection7.jpeg" class="collection__pic">
+                    <div class="mywork__description">
+                        <p class="href__after">베이퍼맥스 컬렉션</p>
+                        <p>일상에 신기 좋은</p>
+                    </div>
+            </a>
+                <!-- collection1 -->
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="spring">
+                <img src="img/collection3.jpg" class="collection__pic">
                 <div class="mywork__description">
-                 <p class="href__after">베이퍼맥스 컬렉션</p>
-                 <p>일상에 신기 좋은</p>
+                    <p class="href__after">바람막이 컬렉션</p>
+                    <p>언제나 입기 좋은</p>
                 </div>
-                </a>
+            </a>
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="winter">
+                <img src="img/nike collection4.jpg" class="collection__pic">
+                <div class="mywork__description">
+                    <p class="href__after">후리스 컬렉션</p>
+                    <p>겨울에 입기 좋은</p>
+                </div>
+            </a>
+                <!-- collection1 -->
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="fall">
+                <img src="img/collection5.jpeg" class="collection__pic">
+                <div class="mywork__description">
+                    <p class="href__after">에어포스 컬렉션</p>
+                    <p>일상에 신기좋은</p>
+                </div>
+            </a>
+                <!-- collection1 -->
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="fall">
+                <img src="img/collection6.jpeg" class="collection__pic">
+                <div class="mywork__description">
+                    <p class="href__after">조던 컬렉션</p>
+                    <p>일상에 꾸미기좋은</p>
+                </div>
+            </a>
+                <!-- collection1 -->
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="spring">
+                <img src="img/collection2.jpg" class="collection__pic">
+                    <div class="mywork__description">
+                        <p class="href__after">코르테즈 컬렉션</p>
+                        <p>일상에 신기 좋은</p>
+                    </div>
+            </a>
+               <!-- collection1 -->
+            <a href="https://www.nike.com/kr/ko_kr/" class="href" data-type="winter">
+                <img src="img/collection7.jpeg" class="collection__pic">
+                    <div class="mywork__description">
+                        <p class="href__after">베이퍼맥스 컬렉션</p>
+                        <p>일상에 신기 좋은</p>
+                    </div>
+            </a>
+
         </div>
     </section>
     <!-- testimoanils -->
@@ -238,20 +287,20 @@
             <div class="testimonials__saying">
                 <p>
                     세상 사람들이 미쳤다고 말하더라도 신경 쓰지 말자. 멈추지 않고 계속 가는 거다. 그곳에 도달할 때까지는 멈추는 것을 생각하지도 말자.
-                     <br>그리고 그곳이 어디인지에 관해서도 깊이 생각하지 말자. 어떤 일이 닥치더라도 멈추지 말자
-                     <br><span class="esp"> 필 나이트</span> /nike
+                    <br>그리고 그곳이 어디인지에 관해서도 깊이 생각하지 말자. 어떤 일이 닥치더라도 멈추지 말자
+                    <br><span class="esp"> 필 나이트</span> /nike
                 </p>
             </div>
         </div>
         <!-- test2 -->
         <div class="testimonials__list">
-             <div class="testimonials__saying">
+            <div class="testimonials__saying">
                 <p>
                     나이키의 11개 격언은 새기면 새길수록 가슴이 뛴다.  
                     나이키의 철학은 회사뿐만 아니라 개인의 삶에도 그대로 적용할 수 있다. 
                     <br>기본에 충실하고, 혁신하고, 단순화하고, 즉시 행동하고, 옳은 일을 하고,  
                     소비자를 위한다면 승리와 행운은 언제나 나의 몫일 것이다.
-                     <br><span class="esp"> 마크 파커</span> /nike
+                    <br><span class="esp"> 마크 파커</span> /nike
                 </p>
             </div>
             <div class="testimonials__avatar">
@@ -263,15 +312,14 @@
     <section id="contact">
         <div class="contact">
         <div class="contact__icons">
-        <img src="img/real nike.png" alt="" class="contact__pic">
+            <img src="img/real nike.png" alt="" class="contact__pic">
         </div>
         <div class="contact__input">
             <span>고객센터   </span>
             <i class="fas fa-search"></i>
-            
             <input type="text">
         </div>
-       </div>
+        </div>
     </section>
     <h2 class="contact__title">contact us</h2>
     <div class="contact__list">
@@ -300,7 +348,7 @@
             <i class="fas fa-envelope-open"></i>
             </span>
             <div class="contact__content">
-              이메일 문의
+            이메일 문의
                 <br>321963741@naver.com
                 <br>1:1 이메일 문의 가능
             </div>
@@ -312,9 +360,12 @@
             </span>
             <div class="contact__content">
                 매장안내
-                  <br>전역 매장 방문 가능
+                <br>전역 매장 방문 가능
             </div>
-         </div>
+        </div>
     
+        <button class="arrowup__btn">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 </body>
 </html>

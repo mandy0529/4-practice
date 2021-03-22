@@ -65,14 +65,24 @@ input {
 }
 /* navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 500ms ease-in;
 }
+#navbar.navbar--dark {
+  background-color: white;
+  padding: 8px;
+}
+
 .navbar__pic {
   padding: 0 20px;
-  width: 130px;
-  height: 100px;
+  width: 100px;
+  height: 80px;
 }
 .navbar__list i {
   padding: 10px 20px;
@@ -89,6 +99,7 @@ input {
   text-align: center;
   color: var(--color-white);
   padding: 150px 0;
+  transition: all 700ms ease-in;
 }
 .home__btn {
   font-size: 25px;
@@ -227,12 +238,23 @@ input {
   flex-wrap: wrap;
   justify-content: center;
   padding: 50px 0;
+  opacity: 1;
+  transition: all 300ms ease-out;
 }
+.mywork__collection.href__animation {
+  opacity: 0.6;
+  transform: scale(0.96) translateY(40px);
+}
+
 .href {
   width: 270px;
   height: 270px;
   position: relative;
 }
+.href.href--invisible {
+  display: none;
+}
+
 .collection__pic {
   width: 100%;
   height: 100%;
@@ -305,7 +327,6 @@ input {
 /* contact */
 #contact {
   text-align: center;
-
   padding: 40px 0;
 }
 .contact {
@@ -387,4 +408,22 @@ input {
   .contact__title {
     text-align: center;
   }
+}
+.arrowup__btn {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  background-color: darkblue;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 500ms ease-in-out;
+}
+.arrowup__btn.arrowup--visible {
+  opacity: 1;
+  pointer-events: auto;
 }
